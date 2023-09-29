@@ -2,8 +2,8 @@
 /**
  * Implement a playing card
  *
- * @author Mr. Jaffe
- * @version 2022-10-18
+ * @author Kathryn Mokhov
+ * @version 2023
  */
 public class Card
 {

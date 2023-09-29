@@ -1,5 +1,6 @@
 import java.util.List;
 import java.util.ArrayList;
+import java.util.Collections;
 import java.util.*;
 
 /**
@@ -18,8 +19,6 @@ public class Deck
     public Deck()
     {
         cards = new ArrayList<Card>();
-        initializeNewDeck();
-        
     }
     
     public void initializeNewDeck() {
@@ -47,12 +46,9 @@ public class Deck
      * Shuffles the cards in the deck
      */
     public void shuffle() {
-        Random r1 = new Random();
-        for (int i = cards.size() - 1; i >= 1; i--) {
-            Collections.swap(cards, i, r1.nextInt(i + 1));
-        }
-        
-        
+        Collections.shuffle(cards);
+ 
+        System.out.println(cards);
     }
     
     /**
@@ -77,8 +73,7 @@ public class Deck
      * @returns The top card of the deck (at cards index 0)
      */
     public Card dealCardFromDeck() {
-        Deck[] middle = new Deck[1];
-        halves.addCardToDeck(this.middle);
+        // To be written 
         return null;
     }
     
@@ -87,7 +82,7 @@ public class Deck
      * @param cardToAdd: Card to add to this deck
      */
     public void addCardToDeck(Card cardToAdd) {
-        
+        // To be written
     }
     
 }
